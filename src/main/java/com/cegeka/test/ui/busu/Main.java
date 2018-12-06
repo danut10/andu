@@ -66,10 +66,6 @@ public class Main
 			}
 			System.out.println();
 		}
-		showTrunk(height);
-	}
-
-	private static void showTrunk(int height) {
 		for (int i = 0; i < (height - 1); i++)
 		{
 			System.out.print(" ");
