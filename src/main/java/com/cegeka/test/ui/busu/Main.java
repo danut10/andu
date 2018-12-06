@@ -21,13 +21,9 @@ public class Main
 	/** DOCUMENT ME! */
 	private static void showHardcodedTree()
 	{
-		System.out.println("      *");
-		System.out.println("     * *");
-		System.out.println("    * * *");
-		System.out.println("   * * * *");
-		System.out.println("  * * * * *");
-		System.out.println(" * * * * * * ");
-		System.out.println("* * * * * * *");
-		System.out.println("      *      ");
+		System.out.println("   *");
+		System.out.println("  ***");
+		System.out.println(" *****");
+		System.out.println("   *  ");
 	}
 }
