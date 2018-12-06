@@ -1,4 +1,4 @@
-package com.cegeka.test.ui;
+package com.cegeka.test.ui.andu;
 
 import java.util.Scanner;
 
@@ -12,13 +12,6 @@ public class Main
 {
 	//~ Static fields/initializers ---------------
 	/**  */
-	private static final String christmassTree = ""
-		+ "  *\n"
-		+ " * *\n"
-		+ "* * *\n"
-		+ "  *\n";
-
-	/**  */
 	private static final String TREE_PART = "*";
 
 	/**  */
@@ -27,7 +20,6 @@ public class Main
 	/**  */
 	private int height;
 	//~ Methods ----------------------------------
-
 	/**
 	 * DOCUMENT ME!
 	 *
