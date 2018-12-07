@@ -50,14 +50,9 @@ public class Main
 		int blancSpaces = height - 1;
 		for (int i = 0; i < height; i++)
 		{
-			boolean addedBlancSpaces = false;
-			if (!addedBlancSpaces)
+			for (int j = 0; j < blancSpaces; j++)
 			{
-				for (int j = 0; j < blancSpaces; j++)
-				{
-					System.out.print(" ");
-				}
-				addedBlancSpaces = true;
+				System.out.print(" ");
 			}
 			blancSpaces--;
 			for (int k = 0; k < ((i * 2) + 1); k++)
@@ -66,6 +61,17 @@ public class Main
 			}
 			System.out.println();
 		}
+		showTrunk(height);
+	}
+	
+
+	/**
+	 * DOCUMENT ME!
+	 *
+	 * @param  height
+	 */
+	private static void showTrunk(int height)
+	{
 		for (int i = 0; i < (height - 1); i++)
 		{
 			System.out.print(" ");
