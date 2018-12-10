@@ -4,8 +4,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-import java.util.Scanner;
-
 
 /**
  * DOCUMENT ME!
@@ -37,7 +35,7 @@ public class MainOptions
 	private static void showDinamicTree()
 	{
 		BufferedReader input = new BufferedReader(new InputStreamReader(System.in));
-		Scanner s = new Scanner(System.in);
+
 		try
 		{
 			while (true)
@@ -53,7 +51,6 @@ public class MainOptions
 					{
 						System.out.println("Enter height:");
 						int height = Integer.parseInt(input.readLine());
-						;
 						showDinamicTree1(height);
 						break;
 					}
@@ -62,7 +59,6 @@ public class MainOptions
 					{
 						System.out.println("Enter height:");
 						int height = Integer.parseInt(input.readLine());
-						;
 						showDinamicTree2(height);
 						break;
 					}
@@ -71,7 +67,6 @@ public class MainOptions
 					{
 						System.out.println("Enter height:");
 						int height = Integer.parseInt(input.readLine());
-						;
 						showDinamicTree3(height);
 						break;
 					}
@@ -115,7 +110,19 @@ public class MainOptions
 		{
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		} // end try-catch
+		}
+		finally
+		{
+			try
+			{
+				input.close();
+			}
+			catch (IOException e)
+			{
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		} // end try-catch-finally
 	}
 	
 	/**
