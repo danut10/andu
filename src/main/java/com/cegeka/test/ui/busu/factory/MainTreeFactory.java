@@ -34,7 +34,12 @@ public class MainTreeFactory
 		{
 			while (true)
 			{
-				System.out.println("Choose one of 4 tree patterns:");
+				System.out.println("Choose one of 5 tree patterns:");
+				System.out.println("Regular");
+				System.out.println("Fat");
+				System.out.println("Slim");
+				System.out.println("A");
+				System.out.println("Tip5");
 				String pattern = input.readLine();
 				Tree tree = shapeFactory.getShape(pattern);
 				if (tree != null)
@@ -46,9 +51,9 @@ public class MainTreeFactory
 					System.out.println("Wrong Answer");
 				}
 				System.out.println();
-				System.out.println("exit(Y or N)?:");
+				System.out.println("exit(Yes or else)?:");
 				String exit = input.readLine();
-				if (exit.equals("Y"))
+				if (exit.equals("Yes"))
 				{
 					return;
 				}
